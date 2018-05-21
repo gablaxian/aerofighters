@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>AeroFighters</title>
+
+    <style type="text/css" media="screen">
+        *    { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background-color: #222; }
+        main { text-align: center; padding-top: 1rem; }
+
+        canvas {
+            image-rendering: crisp-edges;  /* firefox */
+            image-rendering: pixelated;    /* chrome */
+        }
+
+        .Controls {
+            color: #fff;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <canvas width="304" height="224"></canvas>
+
+        <div class="Controls">
+            Move: Arrow keys<br>
+            Shoot: <kbd>Space</kbd><br>
+            Pause: <kbd>Enter</kbd>
+        </div>
+    </main>
+
+    <!-- config -->
+    <script src="assets/js/data/config.js"></script>
+
+    <!-- level data -->
+    <script src="assets/js/data/db.js"></script>
+
+    <!-- engine -->
+    <script src="assets/js/engine/helpers.js"></script>
+    <script src="assets/js/engine/input.js"></script>
+    <script src="assets/js/engine/spritesheet.js"></script>
+    <script src="assets/js/engine/spline.js"></script>
+
+    <!-- game -->
+    <script src="assets/js/game/enemy.js"></script>
+    <script src="assets/js/game/player.js"></script>
+    <script src="assets/js/game/bullet.js"></script>
+    <script src="assets/js/game/hud.js"></script>
+
+    <!-- app -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
